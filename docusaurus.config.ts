@@ -3,9 +3,9 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'My Site',
+  title: 'Op Cat',
   tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/op-cat.png',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
@@ -46,8 +46,9 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+            // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/wade-liwei/op-cat-blog/tree/main/',
+          },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -59,7 +60,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      // title: 'My Site',
+      // title: 'Op Cat',
       // logo: {
       //   alt: 'My Site Logo',
       //   src: 'img/logo.svg',
@@ -71,9 +72,10 @@ const config: Config = {
         //   position: 'left',
         //   label: 'Tutorial',
         // },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          // href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/wade-liwei/op-cat-blog',
           label: 'GitHub',
           position: 'right',
         },
@@ -84,45 +86,45 @@ const config: Config = {
       links: [
         {
           title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
+          // items: [
+          //   {
+          //     label: 'Tutorial',
+          //     to: '/docs/intro',
+          //   },
+          // ],
         },
         {
           title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
+          // items: [
+          //   {
+          //     label: 'Stack Overflow',
+          //     href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+          //   },
+          //   {
+          //     label: 'Discord',
+          //     href: 'https://discordapp.com/invite/docusaurus',
+          //   },
+          //   {
+          //     label: 'Twitter',
+          //     href: 'https://twitter.com/docusaurus',
+          //   },
+          // ],
         },
         {
           title: 'More',
           items: [
             {
               label: 'Blog',
-              to: '/blog',
+              to: '/',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/wade-liwei/op-cat-blog',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Op Cat, Inc.`,
     },
     prism: {
       theme: prismThemes.github,
